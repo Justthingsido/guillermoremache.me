@@ -1,0 +1,30 @@
+section.experience#experience
+  .section-wrapper
+    h3.section-name Experience
+    .content-wrapper
+      | {% for company in site.data.resume-info.companies %}
+      .col-content(class="{{company.name}}")
+        .col-wrapper
+          .col-1
+            h4.company-name {{ company.name }}
+              | {% if company.avatar %}
+              img.logo(src="assets/img/{{ company.avatar }}", alt="")
+            | {% endif %}
+            h5.position {{ company.position }}
+          .col-2
+            h4.date {{ company.date }} 
+            h5.city {{company.city }}  
+        | {% if company.description %}
+        ul.description-wrapper
+          | {% for nestedcompany in company.description %}
+          li.description(class="{% if nestedcompany.tag %} {{nestedcompany.class}}{% endif %}" ) {% if nestedcompany.tag %} <a href="{{site.baseurl}}{{ nestedcompany.tag }}")> {{ nestedcompany.nested }} </a> {% else %}{{ nestedcompany.nested }}{%endif%}
+          | {% endfor %}
+        | {% endif %}
+        | {% if company.description %}
+        ul.description-wrapper.more_text
+          | {% for nestedcompany in company.descriptionExtra %}
+          li.description {{ nestedcompany.nested }}
+          | {% endfor %}            
+        | {% endif %}
+        .line-between     
+      | {% endfor %}

@@ -1,0 +1,7 @@
+section.about#about
+    .section-wrapper
+      h1.logo
+      h1.name {{site.name}}
+      | {% for about in site.data.resume-info.about %}
+      p.about-me {{about.about-me}}
+      | {% endfor %}

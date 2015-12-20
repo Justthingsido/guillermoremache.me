@@ -1,0 +1,17 @@
+# Site settings
+name: Guillermo Remache
+title: Guillermo Remache Resume
+email: guillermo@justthingsido.com
+description: Digital Resmume
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "blog.justthingsido.com" # the base hostname & protocol for your site
+twitter_username: GRemache93
+github_username:  justthingsido
+
+permalink: pretty
+
+# Build settings
+markdown: kramdown
+
+
+exclude: [node_modules, gulpfile.js, package.json, 'assets/css/main.sass', 'Guiller*.psd']

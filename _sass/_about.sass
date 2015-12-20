@@ -1,0 +1,39 @@
+section.about
+  .section-wrapper
+    align-items: center
+
+    .logo
+      +size(200px)
+      border-radius: 50%
+      background:
+        image: url(/assets/img/logo.svg)
+        repeat: no-repeat
+        position: center
+        size: contain
+        size: 180px
+        color: white
+
+    .name
+      padding-top: 20px
+      font-weight: 400
+      color: #A3473E
+      text-align: center
+
+    .about-me
+      padding-top: 20px
+      max-width: 80%
+      font-style: italic
+
+@media screen and (max-width: 640px)
+  section.about
+    .section-wrapper
+      .logo
+        +size(150px)
+        background:
+          size: 120px
+
+      .about-me
+        max-width: 100%
+
+      .name
+        font-size: 250%

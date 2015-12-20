@@ -1,0 +1,31 @@
+
+<section id="experience" class="experience">
+  <div class="section-wrapper">
+    <h3 class="section-name">Experience</h3>
+    <div class="content-wrapper">{% for company in site.data.resume-info.companies %}
+      <div class="col-content {{company.name}}">
+        <div class="col-wrapper">
+          <div class="col-1">
+            <h4 class="company-name">
+              {{ company.name }}
+              {% if company.avatar %}<img src="assets/img/{{ company.avatar }}" alt="" class="logo"/>
+            </h4>{% endif %}
+            <h5 class="position">{{ company.position }}</h5>
+          </div>
+          <div class="col-2">
+            <h4 class="date">{{ company.date }} </h4>
+            <h5 class="city">{{company.city }}  </h5>
+          </div>
+        </div>{% if company.description %}
+        <ul class="description-wrapper">{% for nestedcompany in company.description %}
+          <li class="description {% if nestedcompany.tag %} {{nestedcompany.class}}{% endif %}">{% if nestedcompany.tag %} <a href="{{site.baseurl}}{{ nestedcompany.tag }}")> {{ nestedcompany.nested }} </a> {% else %}{{ nestedcompany.nested }}{%endif%}</li>{% endfor %}
+        </ul>{% endif %}
+        {% if company.description %}
+        <ul class="description-wrapper more_text">{% for nestedcompany in company.descriptionExtra %}
+          <li class="description">{{ nestedcompany.nested }}</li>{% endfor %}            
+        </ul>{% endif %}
+        <div class="line-between">    </div>
+      </div>{% endfor %}
+    </div>
+  </div>
+</section>

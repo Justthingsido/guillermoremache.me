@@ -1,0 +1,22 @@
+
+<section id="skills" class="skills">
+  <div class="section-wrapper">
+    <h3 class="section-name">Skills</h3>    
+    <div class="content-wrapper">
+      {% if site.data.resume-info.skills %} 
+      {% for skill in site.data.resume-info.skills %}
+      <div class="skill-unit">
+        <div class="skill-label">{{ skill.skill-name }}
+          <div class="skill-icons skill-{{ skill.value }}">{% for i in (1..10) %}<span> </span>{% endfor %}</div>{% if skill.sub-skills %}
+                    
+          <div class="sub-skill-unit">{% for nestedskill in skill.sub-skills %}  
+            <div class="skill-label">{{ nestedskill.nested }}
+              <div class="skill-icons skill-{{ nestedskill.value }}">{% for i in (1..10) %}<span> </span>{% endfor %}</div>
+            </div>{% endfor %}
+          </div>{% endif %} 
+        </div>
+      </div>{% endfor %}
+      {% endif %}
+    </div>
+  </div>
+</section>

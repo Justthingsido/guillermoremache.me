@@ -1,0 +1,8 @@
+include ./mixins/mixins.jade
+footer
+  +follow()
+  .copyright.copyshow
+    | Copyright © 
+    script.
+      new Date().getFullYear()>2010&&document.write(new Date().getFullYear());
+    a(href='http://{{ site.data.assets.designerURL }}')  · {{ site.data.resume-info.designer }} · All Rights Reserved

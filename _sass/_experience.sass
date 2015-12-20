@@ -1,0 +1,104 @@
+section.experience
+  height: auto
+  overflow: scroll
+  .col-wrapper
+    display: flex
+    justify-content: space-between
+
+  .line-between
+    border-bottom: 1px solid black
+    width: 5%
+    margin: 0 auto
+    padding: 5px 0 0 0
+  //hide line after last col-wrapper
+  div > div > div:nth-child(6)
+    display: none
+
+  .col-1
+    display: flex
+    padding-bottom: 0
+    flex-direction: column
+    flex: 1
+
+  .company-name,
+  .date
+    font-weight: 300
+    color: black
+
+  .date,
+  .city
+    text-align: right
+
+  .position,
+  .city
+    font-weight: 700
+
+  .description
+    width: 90%
+    padding: 0 0 0 0
+    font-style: oblique
+    font-size: 95%
+    margin: 0
+
+  li.read_more
+    list-style: none
+    a
+      font-size: 120%
+  ul.more_text
+    padding-top: 0
+    display: none
+
+  img.logo
+    width: 100px
+    height: 40px
+    margin-right: 5px
+    display: flex
+    order: -1
+  .company-name
+    display: flex
+    flex-direction: column
+    position: relative
+
+
+@media screen and (max-width: 600px)
+  //move date and city to the left
+  section.experience
+    div > div > div:nth-child(2) > div:nth-child(2)
+      align-items: flex-start
+
+    .col-wrapper
+      flex-direction: column-reverse
+      padding-bottom: 20px
+      padding-top: 15px
+    .line-between
+      width: 15%
+
+
+    .col-1
+      flex-direction: column
+
+    .company-name,
+    .position,
+    .description
+      text-align: left
+
+    .company-name
+      display: flex
+      justify-content: flex-end
+      flex-direction: row-reverse
+
+    .date,
+    .city
+      text-align: right
+      font-size: 100%
+
+
+    .description
+      padding: 0
+      width: 100%
+
+
+
+    img.logo
+      margin-left: 20px
+      left: 1%

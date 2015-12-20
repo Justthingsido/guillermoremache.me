@@ -1,0 +1,18 @@
+section.education#education
+  .section-wrapper
+    h3.section-name Education
+    .content-wrapper
+      | {% for school in site.data.resume-info.schools %}
+      .col-wrapper
+        .col-1
+          h4.school-name {{ school.name }}
+            img.logo(src="assets/img/{{ school.avatar }}", alt="")
+          h5.major {{ school.major }}
+            | {% if school.minor %}
+            p.minor Minor in : {{school.minor}}
+            | {% endif %}
+        .col-1
+          h4.date {{ school.date }}
+          h5.city {{school.city }}
+      .line-between
+      | {% endfor %}

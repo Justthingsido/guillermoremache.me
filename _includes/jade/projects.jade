@@ -1,0 +1,15 @@
+section.projects#projects
+  .section-wrapper
+    h3.section-name Projects
+    .content-wrapper
+      | {% for project in site.data.resume-info.projects %}
+      .col-wrapper
+        .col-1
+          a.project-name(href="{{project.link}}") {{ project.name }}
+          .logo {{ project.avatar }}
+        h4.date {{ project.date }} 
+      .description-wrapper
+        p.description {{ project.description }}
+
+      iframe(src="{{project.link}}").
+      | {% endfor %}

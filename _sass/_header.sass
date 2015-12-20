@@ -1,0 +1,180 @@
+.home
+  header
+    width: 135px
+    background: white
+    padding: 30px 0
+    z-index: 100
+
+
+    .header-position
+      position: fixed
+      left: 0
+      bottom: 30px
+      width: 135px
+      display: flex
+      z-index: 100
+      flex-direction: column
+      justify-content: space-between
+
+
+    .logo
+      +hide-text
+      max-width: 135px
+      background:
+        image: url(/assets/img/logo.svg)
+        repeat: no-repeat
+        position: center
+        size: contain
+      height: 80px
+      padding: 0
+      margin: 0
+      cursor: pointer
+      margin-top: 30px
+
+      &:hover
+        transition: all 2s ease-out
+        transform: rotate3d(0, 1 , 0, -360deg)
+
+    //Desktop navigation
+    .site-nav
+
+      ul
+        list-style: none
+        margin: 20px 0
+        padding: 0 20px  0 0
+        text-align: right
+
+        li
+          margin-bottom: 10px
+
+
+          &:last-child
+            margin-bottom: 0
+    .current
+      color: $blue
+      text-transform: uppercase
+      text-decoration: underline
+
+    .email-link .extraLink
+      display: block
+      text-align: right
+      padding-right: 20px
+
+    .mobile-nav-toggle
+      display: none
+      +size(35px)
+      margin-right: 20px
+      align-items: center
+      cursor: pointer
+
+
+      &:hover
+        svg
+          transition: all 1.5s cubic-bezier(.34,-1.94,.29,.33)
+          +size(100%)
+          transform: rotate(180deg)
+
+      svg
+        +size(100%)
+
+
+
+  //mobile-nav
+
+  .mobile-nav
+    display: none
+    position: fixed
+    background: white
+    width: 100%
+    padding: 60px 0 0
+    // transform: translateY(-100%)
+    // transition: all .5s ease-in-out
+    bottom: auto
+    z-index: 100
+
+    ul
+      list-style: none
+      margin: 0
+      padding: 0
+
+    li
+      text-align: center
+      margin-bottom: 10px
+      border-bottom: 1px solid rgba($gray, 0.2)
+
+      &:last-child
+        margin-bottom: 0
+        border-bottom: 0
+
+
+  a
+    font-size: 120%
+    display: flex
+    justify-content: center
+    width: 100%
+
+// styles header social links as well as mobile footer links
+.social-follow
+  padding: 5px 0
+  width: 100%
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  flex-direction: row
+.icon > svg,
+  +size(35px)
+  border-radius: 50%
+  fill: #2691d9
+  &:hover
+    border-radius: 50%
+    background: #2691d9
+    fill: black
+.linkedin-icon > svg,
+  align-items: center
+.aboutme-icon > svg
+  align-items: center
+
+.downloadResume
+  display: flex
+
+
+
+
+@media (max-width: 775px)
+  .home
+    header
+      background: white
+      width: 100%
+      .header-position
+        width: auto
+        background: white
+        position: fixed
+        width: 100%
+        top: 0
+        bottom: auto
+        padding-top: 1%
+        left: auto
+        flex-direction: row
+        align-items: center
+
+      .site-nav,
+      .email-link,
+      .follow-content
+        display: none
+
+      .logo
+        +size(40px)
+        margin-left: 15px
+        margin-top: 0
+
+      .mobile-nav-toggle
+        display: block
+
+    .mobile-nav
+      position: fixed
+
+    // disabled to use .slideToggle
+    // .mobile-nav.is-open
+    //   display: block
+    //   transform: translatey(0%)
+    //   transition: all .5s ease-in-out

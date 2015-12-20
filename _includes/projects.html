@@ -1,0 +1,18 @@
+
+<section id="projects" class="projects">
+  <div class="section-wrapper">
+    <h3 class="section-name">Projects</h3>
+    <div class="content-wrapper">{% for project in site.data.resume-info.projects %}
+      <div class="col-wrapper">
+        <div class="col-1"><a href="{{project.link}}" class="project-name">{{ project.name }}</a>
+          <div class="logo">{{ project.avatar }}</div>
+        </div>
+        <h4 class="date">{{ project.date }} </h4>
+      </div>
+      <div class="description-wrapper">
+        <p class="description">{{ project.description }}</p>
+      </div>
+      <iframe src="{{project.link}}"></iframe>{% endfor %}
+    </div>
+  </div>
+</section>

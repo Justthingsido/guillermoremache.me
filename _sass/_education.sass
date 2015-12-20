@@ -1,0 +1,92 @@
+section.education
+  .col-wrapper
+    display: flex
+    justify-content: space-between
+
+  .line-between
+    border-bottom: 1px solid black
+    width: 5%
+    margin: 0 auto
+    padding: 5px 0 0 0
+  //hide line after last col-wrapper
+  div > div > div:nth-child(6)
+    display: none
+
+  .col-1
+    width: 100%
+    display: flex
+    padding-bottom: 0
+    flex-direction: column
+
+  .school-name,
+  .date
+    font-weight: 300
+    color: black
+
+  .date,
+  .city
+    text-align: right
+
+
+  img.logo
+    +size(50px)
+    margin-right: 5px
+    display: flex
+    order: -1
+  .school-name
+    display: flex
+    flex-direction: column
+    position: relative
+
+  .major,
+  .city
+    font-weight: 700
+
+  .minor
+    padding-left: 40px
+    font-style: oblique
+    font-size: 100%
+    font-weight: 500
+    margin: 0
+
+
+@media screen and (max-width: 600px)
+  //move date and city to the left
+  section.education
+    div > div > div:nth-child(2) > div:nth-child(2)
+      align-items: flex-start
+
+    .col-wrapper
+      flex-direction: column-reverse
+      padding-bottom: 20px
+      padding-top: 15px
+    .line-between
+      width: 15%
+
+
+    .col-1
+      flex-direction: column
+
+    .school-name,
+    .major,
+    .minor
+      text-align: left
+
+    .date,
+    .city
+      text-align: right
+      font-size: 100%
+
+    .city
+      font-size: 125%
+    .minor
+      padding-right: 50px
+      font-size: 100%
+
+    img.logo
+      +size(50px)
+      display: flex
+      padding: 10px
+      margin: 0 0 0 auto
+      left: 1%
+      padding: 0

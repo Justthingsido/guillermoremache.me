@@ -1,0 +1,96 @@
+section.skills
+  overflow: hidden
+  .content-wrapper
+    max-width: 540px
+    margin: 40px auto
+    +clearfix
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+
+    .skill-unit
+      width: 50%
+      height: 72.9px
+
+      .skill-label
+        font-size: 16px
+        font-weight: 600
+        position: relative
+
+
+        &:hover .sub-skill-unit
+          border: 1px solid brown
+          border-radius: 1%
+          transform: translateX(0%)
+
+      &:hover
+        height: auto
+
+    .skill-icons
+      font-size: 0
+      margin: 3px 0 30px
+
+
+      span
+        display: inline-block
+        +size(14px)
+        background-color: brown
+        margin-right: 8px
+        border-radius: 50%
+
+        &:after
+          content: ''
+          display: flex
+          +size(10px)
+          background: #fff
+          border-radius: 50%
+          margin: 2px
+          transition: all 2s ease-in-out
+
+
+
+      @for $i from 1 through 10
+        &.skill-#{$i} span:nth-child(n+#{$i+1})
+          background: gray
+
+
+
+    .sub-skill-unit
+      display: flex
+      width: 90%
+      margin: 0 auto
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: flex-start
+      z-index: 1
+      margin-bottom: 20px
+      transform: translateX(500%)
+      transition: all .3s ease
+
+      .skill-label
+        padding-left: 10px
+
+
+      .skill-icons
+        font-size: 0
+        margin: 3px 0 5px
+
+  @media screen and (max-width: 600px)
+    .content-wrapper
+      flex-direction: column
+
+      .skill-unit
+        width: 100%
+
+      .skill-label
+        width: 220px
+        margin: 0 auto
+
+      .skill-unit-label
+        width: 100%
+
+
+      .sub-skill-unit
+        width: 220px
+        margin: 0 0 20px 0

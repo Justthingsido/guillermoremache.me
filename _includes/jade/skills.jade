@@ -1,0 +1,28 @@
+section#skills.skills
+    .section-wrapper
+        h3.section-name Skills
+        |     
+        .content-wrapper
+          | {% if site.data.resume-info.skills %} 
+          | {% for skill in site.data.resume-info.skills %}
+          .skill-unit
+            .skill-label
+              | {{ skill.skill-name }}
+              .skill-icons(class='skill-{{ skill.value }}')
+                | {% for i in (1..10) %}
+                span 
+                | {% endfor %}
+              | {% if skill.sub-skills %}
+              |           
+              .sub-skill-unit
+                | {% for nestedskill in skill.sub-skills %}  
+                .skill-label
+                  | {{ nestedskill.nested }}
+                  .skill-icons(class='skill-{{ nestedskill.value }}')
+                    | {% for i in (1..10) %}
+                    span 
+                    | {% endfor %}
+                | {% endfor %}
+              | {% endif %} 
+          | {% endfor %}
+          | {% endif %}
