@@ -1,10 +1,17 @@
+#Personal
+author:
+  - name: Guillermo Remache
+    email: guillermo@justthingsido
+    url: justthingsido.com
+
+
 # Site settings
 name: Guillermo Remache
 title: Guillermo Remache Resume
 email: guillermo@justthingsido.com
 description: Digital Resmume
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "blog.justthingsido.com" # the base hostname & protocol for your site
+url: "http://blog.justthingsido.com" # the base hostname & protocol for your site
 twitter_username: GRemache93
 github_username:  justthingsido
 linkedin-username: gremache
@@ -14,5 +21,13 @@ permalink: pretty
 # Build settings
 markdown: kramdown
 
+gems:
+  # - octopress-minify-html
+  - jekyll-sitemap
+  - jekyll-feed
 
 exclude: [node_modules, gulpfile.js, package.json, 'assets/css/main.sass', 'Guiller*.psd']
+
+keywords: >
+  resume, network administrator, network engineer, computers, routers, switching, switches, web delvelopement,
+  Active Directory, sass, jade, html, css, javascript, github, web delveloper
