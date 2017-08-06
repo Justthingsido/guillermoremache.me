@@ -4,8 +4,9 @@ designerURL: www.guillermoremache.me
 #-------------------------------
 # about Section
 about:
-  - about-me: I am someone that lives life to the fullest and someone that is always striving for the best. Life has hit me with so many challenges and at these different points in time I had to become someone else entirely, I had to learn new things, I had to apply those things to the projects I am currently working on and other life happenings. I had to make these new experiences parts of me. What I become at certain times, becomes the person I am now. With the ever evolving technology we need to keep evolving, that is exactly what I am. <strong>Ever Evolving.</strong>
-
+  # - about-me: I am someone that lives life to the fullest and someone that is always striving for the best. Life has hit me with so many challenges and at these different points in time I had to become someone else entirely, I had to learn new things, I had to apply those things to the projects I am currently working on and other life happenings. I had to make these new experiences parts of me. What I become at certain times, becomes the person I am now. With the ever evolving technology we need to keep evolving, that is exactly what I am. <strong>Ever Evolving.</strong>
+  - about-me: Experienced Engineer with a demonstrated history of working in the Computer & Network Security industry. Skilled Network and Systems Engineer. Strong information technology professional with a Master’s Degree focused in Information, Network, and Computer Security from New York Institute of Technology.
+    avatar: avatar.png
 #-------------------------------
 # education Section
 
@@ -13,7 +14,7 @@ schools:
   - {avatar: 'nyit-logo.png',
     name: 'New York Institute of Technology',
     major: 'M.S. Information, Network, and Computer Security',
-    date: 'Present - Dec 2017',
+    date: 'Sept 2015 - May 2017',
     city: 'New York, NY'}
 
   - {avatar: 'nyit-logo.png',
@@ -33,9 +34,39 @@ schools:
 # Experience Section
 
 companies:
+  - name: 'DAG Tech LLC'
+    position: 'Senior Engineer'
+    date: 'March 2016 - Present'
+    city: 'New York, NY'
+    description:
+      - nested: Collaborate with network staff to ensure smooth and reliable operation of software and systems for fulfilling business objectives and processes. 
+      - nested: Design and perform server and security audits, system backup procedures, and other recovery processes in accordance with the company’s disaster recovery and business continuity strategies
+      - nested: Work with executive team members to define business requirements and systems goals, and to identify and resolve business systems issues.
+      - nested: Design and deploy new applications and enhancements to existing applications, software, operating systems and network infrastructure. 
+      - nested: Interact and negotiate with vendors, outsourcers, and contractors to secure system-related products and services. 
+      - nested: See More...
+        tag: '#'
+        class: read_more
+    descriptionExtra:
+      - nested: Propose and create system and network design models, specifications, diagrams, and charts to provide direction to System programmer and Network teams. 
+      - nested: Integrate servers, including database, e-mail, print, and backup servers and their associated software into enterprise systems
+      - nested: Monitor and test system performance; prepare and deliver system performance statistics and reports
+      - nested: Provide guidance and assign tasks to System Engineers
+
+  - name: 'J&N Remache Corp'
+    position: 'Chief Technology Officer'
+    date: 'June 2015 - Present'
+    city: 'New York, NY'
+    description:
+      - nested: Maintain current knowledge of technology landscape and developments
+      - nested: Evaluate new technology and makes recommendations on technological solutions
+      - nested: Manage any digital media assets
+      - nested: Consistently evaluate technical efficiency and make changes as necessary
+      - nested: Develop and direct all networking safeguards to reduce the risk of outside breaches and protect sensitive internal and external client information
+
   - name: 'Zamorany.com'
     position: 'Freelancer Web Developer & IT Consultant'
-    date: 'July 2015'
+    date: 'July 2015 - March 2016'
     city: 'New York, NY'
     description:
       - nested: We provide services in Web design & development, content management, web & email hosting, search engine optimisation to Small Businesses and Nonprofits.
@@ -61,9 +92,6 @@ companies:
       - nested:	Setup and Backup Virtual Machines in VMware Workstation, VSphere, Virtual Box, Hyper-V
       - nested:	Design and Developed Internal Website
 
-
-
-
   - name: 'Ballard Pharmacy'
     position: 'Help Desk / Sales Associate'
     date: 'Jan 2013 - May 2014'
@@ -73,7 +101,6 @@ companies:
       - nested: Provided oral and written interpretation services; Interact with customers to ensure proper service
       - nested: Provided direct customer services by informing them of products and services
       - nested: Handled and resolved customers’ complaints
-
 
   - name: 'George Westinghouse High School'
     position: 'Junior Systems and Network Engineer'
@@ -139,6 +166,8 @@ skills:
       value: '8'
     - nested: VMware Vsphere
       value: '7'
+    - nested: Xen Server
+      value: '7'
 
  - skill-name: Windows Operating Systems
    value: '7'
@@ -171,6 +200,8 @@ skills:
  - skill-name: Windows Server Roles
    value: '8'
    sub-skills:
+     - nested: Federated Services
+       value: '8'
      - nested: Active Directory
        value: '9'
      - nested: DNS
@@ -184,8 +215,15 @@ skills:
 
 
 projects:
+  - name: JNRemache.com
+    description: J&N Remache Corp. is a New York-based Home and Business Improvement Company that provides complete building restorations, carpentry, plumbing, electrical, technical, access control, painting and much more. J&N Remache Corp has been in the business for more than decade and has been serving residential and commercial clientele.
+    link: https://jnremache.com
+    landingimage: JNRemache-com-landingpage.png
+    date: December 2015
+    logo: jnremache.com-logo.png
   - name: ZamoraNY.com
     description: Zamora Construction & Remodeling is a New York City based company that specializes in Construction and Remodeling of residential and commercial infrastructure. After 7 years in the construction business, the client decided a website was needed in order to provide information of the services provided by the company and to make them public to current and future clients.
-    link: https://zamorany.com/
+    link: http://zamorany.com/
+    landingimage: Zamorany-com-landingpage.png
     date: October 2015
     avatar: <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve" ><style></style><path d="M55 52.9l0.1 0.4l0.7 0.2c1.9-0.1 3-0.1 3.2-0.1l4.7 0l4.8-0.1c0.3 0 0.6 0 1.1 0c0.9 0.1 2.4 0.1 4.5 0.1 c0.3 0 0.7-0.1 1.3-0.2c0-0.4-0.1-0.8-0.3-1l-1.5-0.4c-2.2-0.6-3.5-1-4-1.3c-0.5-0.3-0.8-0.7-1-1.2c-0.2-0.9-0.3-1.5-0.3-2v-13 c0-2.5 0-4.2 0.1-5l1 0l3 0c0.8 0 1.4 0.1 1.8 0.4s1 0.9 1.8 2l5.2 10.2c2.3 4.1 4.2 7.9 5.9 11.3c0.5 0.1 1 0.1 1.3 0.1 c4.3 0 8.1 0 11.4-0.1c0-0.2 0-0.4 0-0.6c0-0.2 0-0.4 0-0.6c-2.3-0.5-4-0.9-4.9-1.4c-1-0.5-1.8-1.1-2.5-1.9 c-0.7-0.8-1.9-2.7-3.7-5.7l-4.5-8.3c-1.4-2.5-2.6-4.7-3.4-6.5c0.4-0.3 1.1-0.7 1.8-1.1c4.6-2.4 6.8-6 6.8-10.6 c0-2.4-0.6-4.7-1.9-6.6c-1.3-2-2.9-3.4-5.1-4.2c-2.1-0.8-5.8-1.3-11.1-1.3l-9.3 0.1h-2.9c-0.5 0-1 0-1.5 0.1c-0.5 0.1-0.9 0.1-1 0.1 c-0.9 0-1.4 0.2-1.6 0.4c-0.1 0.3-0.1 0.5-0.1 0.7c0 0.3 0.1 0.5 0.3 0.6c0.2 0.1 1.2 0.3 3 0.6c1.8 0.3 2.9 0.7 3.4 1.3 c0.4 0.6 0.6 2.4 0.6 5.3l0 6.8l0 9.5l-0.1 5.1l0.1 4.5c0 1.1 0 2.1-0.1 3.3c-0.2 3.9-0.3 6.2-0.3 6.9v0.4c-0.3 0.6-0.5 1-0.8 1.1 c-0.4 0.2-2.4 0.5-5.8 0.9C55.2 52.5 55 52.7 55 52.9L55 52.9z M68.5 19.8l0-2.9l-0.2-7.1c0-0.7 0-1.7 0.1-3c1-0.1 1.8-0.1 2.5-0.1 c2.6 0 4.8 0.5 6.7 1.5c1.9 1 3.2 2.2 4 3.7c1 1.9 1.5 3.7 1.5 5.4c0 1.6-0.3 3.1-1 4.5c-0.7 1.5-1.5 2.6-2.4 3.3 c-1 0.7-2.2 1.3-3.8 1.6c-2.2 0.4-4.2 0.6-5.9 0.6c-0.3 0-0.8 0-1.4 0C68.5 24.3 68.5 21.8 68.5 19.8L68.5 19.8z"/><path d="M1.4 80c0.2 0 1-0.1 2.2-0.2c3.7-0.5 6.5-0.8 8.7-0.8c0.6 0 1.5 0 2.6 0.1c2.1 0.1 3.3 0.2 3.6 0.2l9.7-0.2l18.7 0.4 l15.2-0.2c1.1 0 2.5 0 4.1 0.1c0.3 0 1.2-0.1 2.6-0.2c0.2-0.9 0.3-1.9 0.3-3l-0.1-3.6l0.2-4c0.1-3.4 0.2-6.1 0.2-8.1 c0-0.7 0-1.5-0.1-2.4L68.9 58c-0.6 0-1 0.2-1.5 0.6c-0.2 0.6-0.4 1.5-0.6 2.8c-1.2 5.4-3.3 9.3-6.4 11.7c-3.1 2.3-8.4 3.5-16 3.5 c-2 0-4.8 0-8.2-0.1l-22.9-0.2c0.3-0.4 0.5-0.8 0.7-1c0.9-1.4 2.8-3.9 5.5-7.4l11.9-15.7L40 41c2.6-3.4 4.1-5.4 4.7-6 c0.9-1.1 2.2-2.8 3.8-5.1l11-14.7c0.4-0.5 1.3-1.7 2.9-3.6c3-3.6 4.5-5.8 4.5-6.4l-0.1-0.4c-0.8-0.3-1.6-0.4-2.3-0.4l-5.9 0.2 L46.3 5L32.5 5.4l-3.2 0c-2.7 0.1-4.4 0.2-5.1 0.3C22.4 5.9 20.6 6 18.9 6C14.6 6 12 5.7 11 5c-1-0.6-1.5-1.6-1.5-2.8 C9.6 1.8 9.7 1.1 10 0H9.3C9 0 8.6 0.1 8.2 0.2C7.8 0.9 7.5 1.9 7.1 3.1c-0.4 1.2-1 3-1.9 5.5c-1.3 4.6-2.2 7.8-2.9 9.6 C1.5 20 1.1 21.3 1 22l1-0.1c0.8-0.5 1.8-1.9 3.1-4.1c1-1.6 2.3-3.3 3.9-5c1.3-1.3 2.4-2.2 3.3-2.6c1.8-0.8 4.6-1.3 8.4-1.5 c3.8-0.2 6.8-0.4 9.1-0.6c2.3-0.2 3.5-0.3 3.8-0.3c6.9-0.1 11.1-0.2 12.6-0.2c1.6-0.1 2.8-0.1 3.9-0.1c1 0 2.2 0 3.6 0.1 c-0.3 0.5-0.6 1-0.9 1.4L33.3 35L10.7 65l-3.3 4.6c-1.2 1.5-1.9 2.4-2.2 2.7c-0.8 1.1-2.5 3.1-5.2 6l0.1 1.5C0.7 80 1.1 80 1.4 80 L1.4 80z"/><path d="M73.7 53.7c-2.3-0.7-4.8-1-7.4-1c-3.6 0-6.4 0.2-8.3 0.6c-2.8 0.6-5.3 1.7-7.6 3.3c-2.3 1.5-4.3 3.5-5.9 5.8 c-1.7 2.3-2.9 4.6-3.7 6.8c-0.8 2.3-1.2 4.9-1.2 7.9c0 3.2 0.5 6.1 1.5 8.8c1 2.7 2.4 4.9 4 6.7c1.7 1.8 3.6 3.2 5.8 4.3 c2.2 1.1 4.2 1.9 6.1 2.4c1.9 0.5 4.7 0.8 8.4 0.8c4.6 0 8.3-0.5 11.1-1.4c0.6-0.2 1-0.3 1.4-0.4C78.2 96.7 79 94 80 90 c0-0.2 0-0.5 0.1-1.1c-0.2-0.1-0.4-0.2-0.5-0.2l-0.4 0.1c-0.8 1.6-1.7 3.1-2.7 4.3c-1.1 1.2-2.2 2.2-3.3 2.8 c-1.1 0.7-2.5 1.3-4.3 1.8c-0.7 0.2-2 0.4-3.9 0.7l-1.7 0c-2.7 0-5.4-0.7-8.1-2.1c-2.7-1.4-4.8-3.7-6.3-7c-1.5-3.3-2.3-7.5-2.3-12.5 c0-2.6 0.3-5.2 1-7.8c0.7-2.5 1.5-4.7 2.6-6.5c1.1-1.8 2.5-3.3 4.1-4.6c1.6-1.3 3.5-2.3 5.6-3c1.2-0.4 2.7-0.6 4.4-0.6 c3.3 0 6.1 0.7 8.3 2.2c2.2 1.5 3.9 3.6 4.9 6.4c0.3 0 0.5 0.1 0.6 0.1c0.2 0 0.4 0 0.7-0.1c0-0.6 0-1.1 0-1.5 c0-1.9-0.1-3.8-0.4-5.6C77.6 55.1 76.1 54.4 73.7 53.7z"/></svg>

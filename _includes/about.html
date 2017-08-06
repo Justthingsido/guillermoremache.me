@@ -1,8 +1,10 @@
 
 <section id="about" class="about">
   <div class="section-wrapper">
-    <h1 class="logo"></h1>
-    <h1 class="name">{{site.name}}</h1>{% for about in site.data.resume-info.about %}
+    {% for about in site.data.resume-info.about %}
+    {% if about.avatar %}<img src="assets/img/{{about.avatar}}" alt="{{about.avatar}} profile" class="logo">{%else %}
+    <h1 class="logo"></h1>{% endif %}
+    <h1 class="name">{{site.name}}</h1>
     <p class="about-me">{{about.about-me}}</p>{% endfor %}
   </div>
 </section>

@@ -6,10 +6,14 @@ section.projects#projects
       .col-wrapper
         .col-1
           a.project-name(href="{{project.link}}") {{ project.name }}
-          .logo {{ project.avatar }}
+          //- | {%if project.avatar %}
+          //- .logo {{ project.avatar }}
+          //- | {%else %}
+          //- img(src="assets/img/{{project.logo }}", alt="{{project.link}} page logo").logo
+          //- | {% endif %}
         h4.date {{ project.date }} 
       .description-wrapper
         p.description {{ project.description }}
-
-      iframe(src="{{project.link}}").
+        a(href="{{project.link}}")
+          img(src="assets/img/{{project.landingimage}}", alt="{{project.link}} landing page")
       | {% endfor %}

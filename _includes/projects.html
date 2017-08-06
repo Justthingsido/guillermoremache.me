@@ -5,14 +5,12 @@
     <div class="content-wrapper">{% for project in site.data.resume-info.projects %}
       <div class="col-wrapper">
         <div class="col-1"><a href="{{project.link}}" class="project-name">{{ project.name }}</a>
-          <div class="logo">{{ project.avatar }}</div>
         </div>
         <h4 class="date">{{ project.date }} </h4>
       </div>
       <div class="description-wrapper">
-        <p class="description">{{ project.description }}</p>
-      </div>
-      <iframe src="{{project.link}}"></iframe>{% endfor %}
+        <p class="description">{{ project.description }}</p><a href="{{project.link}}"><img src="assets/img/{{project.landingimage}}" alt="{{project.link}} landing page"></a>
+      </div>{% endfor %}
     </div>
   </div>
 </section>
